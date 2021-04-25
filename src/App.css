@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: darkgray;
+}
+.input-login-email {
+  @apply appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm;
+}
+.input-login-passwd {
+  @apply appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm;
+}
+.page {
+  max-height: 80vh;
+  @apply container overflow-hidden overflow-y-auto shadow-2xl p-6 flex flex-col my-auto bg-white h-full;
+}
+.page-test {
+  @apply container overflow-hidden shadow-2xl p-6 flex flex-col my-auto bg-white h-full;
+}
+.page-center {
+  max-height: 76vh;
+  @apply container overflow-hidden overflow-y-auto;
+}
+.page-header {
+  @apply mt-1 mb-1 text-center text-3xl font-extrabold text-gray-900
+}
