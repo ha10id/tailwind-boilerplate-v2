@@ -22,13 +22,6 @@ export const SignUp = (props) => {
                if (response.status === 200) {
                  console.log(response);
                  setAuthToken(response.data);
-                 // setAuthTokens(response.data);
-                 // API.get("user/info")
-                 //    .then((resp) => {
-                 //      // console.log(resp);
-                 //      setAuthUser(resp.data);
-                 //    });
-                 //  localStorage.setItem("token", response.data.accessToken);
                  setLoggedIn(true);
                }
              })
@@ -45,7 +38,7 @@ export const SignUp = (props) => {
   }
 
   return (
-    <div className="logout">
+    <div className="panel">
       <h2 className="page-header pb-3">
         Регистрация учётной записи
       </h2>

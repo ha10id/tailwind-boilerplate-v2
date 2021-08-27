@@ -1,12 +1,17 @@
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  // darkMode: false, // or 'media' or 'class'
-  darkMode: 'class',
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {},
+    fontFamily: {
+      'sans': ['Exo\\ 2', 'Segoe\\ UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica\\ Neue', 'sans-serif'],
+    }
   },
   variants: {
-    extend: {},
+    extend: {
+      opacity: ['disabled'],
+    },
+    display: ["group-hover"],
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms'),],
 }
